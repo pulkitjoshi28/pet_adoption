@@ -14,7 +14,7 @@ class CustomListView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
-      itemCount: pets.length + 1, // +1 for the button
+      itemCount: pets.length,
       itemBuilder: (context, index) {
         final pet = pets[index];
         return GestureDetector(
